@@ -2,7 +2,7 @@
 
 
 
-<img src=".\doc\show.png" alt="show" style="zoom: 75%;" />
+<img src="./doc/show.png" alt="show" style="zoom: 75%;" />
 
 ---
 
@@ -65,11 +65,11 @@ Apache 2.0 许可证是一种非常流行且宽松的开源许可证，允许用
 
 
 
-<img src=".\doc\FRP_More_User_Auth.png" alt="FRP_More_User_Auth" style="zoom:120%;" />
+<img src="./doc/FRP_More_User_Auth.png" alt="FRP_More_User_Auth" style="zoom:120%;" />
 
 用户控制web面板，web面板鉴权并制作特定权限生成vip_user/all_user的返回值：
 
-<img src=".\export.png" alt="export" style="zoom: 20%;" />
+<img src="./doc/export.png" alt="export" style="zoom: 20%;" />
 
 | 权限 | 权限描述                              |
 | ---- | ------------------------------------- |
@@ -181,28 +181,28 @@ systemctl start mu.service
 
 现在我们先导入数据库mysql.sql，下图为导入成功后
 
-![image-20241206000228700](.\doc\mysql.png)
+![image-20241206000228700](./doc/mysql.png)
 
 现在我们来修改几个文件，这些文件都在 ***\lib 文件夹*** 里面
 
 修改conn.php文件
 
-![image-20241205235727420](.\doc\code1.png)
+![image-20241205235727420](./doc/code1.png)
 
 修改DB.php文件
 
-![image-20241206001011574](.\doc\code2.png)
+![image-20241206001011574](./doc/code2.png)
 修改好后开始修改我们的邮箱服务器配置（具体配置方法可以去百度上获取)，下面只指出需要修改的地方和内容[config.php]
 
-![image-20241206001329704](.\doc\smtp.png)
+![image-20241206001329704](./doc/smtp.png)
 
 修改完成后进入组成页面，填入邮箱后发送成功，并在邮箱里面收到一封邮件并注册成功即可
 
-![image-20241206001821228](.\doc\email_ok.png)
+![image-20241206001821228](./doc/email_ok.png)
 
 下面是注册成功登录后即可看见测试服务器及前置部署成功
 
-![image-20241206000824528](.\doc\success.png)
+![image-20241206000824528](./doc/success.png)
 
 你可以使用修改邮件模板，这里将不再赘述。
 
@@ -210,7 +210,7 @@ systemctl start mu.service
 
 ​	1.如果你想添加一个节点，请进入server表，然后新建数据，permissions中u是非vip权限使用，1是vip使用，ip为节点ip，port为节点控制端口（默认7000），id不可重复，description为此服务器描述。
 
-<img src=".\doc\phpmyadmin1.png" alt="image-20241206004319355" style="zoom:50%;" />
+<img src="./doc/phpmyadmin1.png" alt="image-20241206004319355" style="zoom:50%;" />
 
 ​	2.如果你想修改公告，请进入gonggao表直接修改内容即可，其内容支持html文本。
 
@@ -220,7 +220,7 @@ systemctl start mu.service
 
 ​	web的服务器连接件处于Web面板的**/frp目录**中，其文件与描述如下
 
-![image-20241206002615109](.\doc\api.png)
+![image-20241206002615109](./doc/api.png)
 
 打开两个文件，并修改 $page_Password 变量，其值为在2.1部分中记录下的KEY
 
@@ -234,7 +234,7 @@ $page_Password = " <YOU KEY> ";
 
 进入\pay\pay\lib目录，修改epay.config.php里面这三个部分即可
 
-<img src=".\doc\epay.png" alt="image-20241206011826927" style="zoom:50%;" />
+<img src="./doc/epay.png" alt="image-20241206011826927" style="zoom:50%;" />
 
 至于如何使用易支付，这里将不再赘述（支持对接彩虹易支付以及其所有衍生产品）
 
