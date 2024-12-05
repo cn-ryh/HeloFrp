@@ -69,7 +69,8 @@ Apache 2.0 许可证是一种非常流行且宽松的开源许可证，允许用
 
 用户控制web面板，web面板鉴权并制作特定权限生成vip_user/all_user的返回值：
 
-<img src="./doc/export.png" alt="export" style="zoom: 20%;" />
+
+![image-20241205231655949](./doc/export.png)
 
 | 权限 | 权限描述                              |
 | ---- | ------------------------------------- |
